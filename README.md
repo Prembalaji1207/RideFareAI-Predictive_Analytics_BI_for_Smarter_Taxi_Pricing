@@ -2,8 +2,6 @@
 # RideFare AI – Predictive Analytics & BI for Smarter Taxi Pricing
 
 ---
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/85d71744-bec9-4b8e-af7d-b81e460eea9d" />
-
 
 <img width="1233" height="340" alt="RideFare AI" src="https://github.com/user-attachments/assets/cc51c4a1-6527-41bc-812b-9210feb3181a" />
 
