@@ -12,11 +12,11 @@ Ride-hailing and taxi platforms set (or validate) fares based on distance, traff
 
 This project demonstrates how **data analytics + machine learning** can produce **reliable, explainable fare predictions** and arm business users with **Power BI dashboards** to monitor demand patterns, identify anomalies, and track model performance—all geared to improving pricing accuracy and customer experience.
 
-## Problem statement
+1.1 ## Problem statement
 
 > Build a predictive system that estimates the **final fare** for a taxi/ride-hailing trip using pickup/drop-off coordinates, trip distance, timestamp features, and passenger count; surface insights and performance diagnostics through interactive **Power BI** dashboards.
 
-## Who benefits (stakeholders)
+1.2 ## Who benefits (stakeholders)
 
 * **Pricing/Revenue** teams: tighter, data-driven fare curves and guardrails.
 * **Operations**: visibility into peak hours, high-error segments, and driver/passenger dynamics.
@@ -24,14 +24,14 @@ This project demonstrates how **data analytics + machine learning** can produce 
 * **Support/CX**: fewer fare disputes; faster resolution with evidence.
 * **Leadership**: KPI view of accuracy (MAE/RMSE/MAPE) and business impact.
 
-## Business objectives & success criteria
+1.3 ## Business objectives & success criteria
 
 * **Accuracy:** Reduce average fare error (MAE/RMSE) vs. a simple baseline (e.g., linear fare rule).
 * **Consistency:** Lower error variance across **hours**, **distance buckets**, and **passenger counts**.
 * **Explainability:** Provide feature importance and error diagnostics (e.g., which hours or trip types are hardest).
 * **Actionability:** Deliver **Power BI** pages for (1) executive KPIs, (2) demand & fare insights, (3) model diagnostics.
 
-**Key KPIs**
+1.4 **Key KPIs**
 
 * **MAE (₹/trip):** average absolute deviation from actual fare.
 * **RMSE (₹/trip):** error with stronger penalty for large mistakes.
@@ -39,24 +39,24 @@ This project demonstrates how **data analytics + machine learning** can produce 
 * **Coverage:** share of trips with error within ±10% / ±₹X.
 * **Anomaly rate:** proportion of implausible fare–distance combinations caught.
 
-## Scope & assumptions
+1.5 ## Scope & assumptions
 
 * **Data inputs:** pickup/drop-off coordinates, pickup datetime, passenger count; engineered features (distance, hour, weekday/weekend, distance buckets).
 * **Models:** baseline linear model → tree-based models (Random Forest, XGBoost).
 * **BI layer:** Power BI dashboards for EDA, business KPIs, and model diagnostics.
 
-**Assumptions**
+1.6 **Assumptions**
 
 * Historical data is representative of production patterns.
 * Fare rules are reasonably stable during the modeling window.
 * No surge pricing field is provided; time-of-day/week proxies capture demand effects.
 
-**Out of scope (for this version)**
+1.7 **Out of scope (for this version)**
 
 * Real-time traffic, weather, and surge factors (can be added later).
 * Routing optimization and ETA prediction.
 
-## Business impact narrative
+1.8 ## Business impact narrative
 
 Accurate fare prediction tightens pricing controls and reduces leakage. BI visibility enables teams to **spot high-error segments** (e.g., very short or very long trips, late-night hours) and take action—whether by retraining, feature enrichment (traffic/weather), or policy tweaks. Ultimately, the platform sees **higher booking conversion, fewer disputes, and improved driver & rider satisfaction**.
 
